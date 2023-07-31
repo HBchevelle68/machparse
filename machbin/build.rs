@@ -4,7 +4,14 @@ use std::process::Command;
 
 fn main() {
     let status = Command::new("clang")
-        .args(["cmach/main.c", "-o", "cmach/cmach"])
+        .args([
+            "-std=c11",
+            "-Wall",
+            "cmach/main.c",
+            "cmach/parse_header.c",
+            "-o",
+            "cmach/cmach",
+        ])
         .status()
         .expect("<<< Failed to build cmach >>>");
 
