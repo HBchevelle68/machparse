@@ -18,6 +18,7 @@ checksum = "8f5f3913fa0bfe7ee1fd8248b6b9f42a5af4b9d65ec2dd2c3c26132b950ecfc2"
 name = "machlib"
 version = "0.1.0"
 dependencies = [
+ "plain",
  "scroll",
 ]
 
@@ -38,6 +39,12 @@ dependencies = [
  "machlib",
  "scroll",
 ]
+
+[[package]]
+name = "plain"
+version = "0.2.3"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "b4596b6d070b27117e987119b4dac604f3c58cfb0b191112e24771b2faeac1a6"
 
 [[package]]
 name = "proc-macro2"

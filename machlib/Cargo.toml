@@ -7,3 +7,4 @@ edition = "2021"
 
 [dependencies]
 scroll = { version = "*", features = ["derive"] }
+plain = { version = "*" }
